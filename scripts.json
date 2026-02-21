@@ -1,0 +1,82 @@
+{
+  "scripts": [
+    {
+      "id": "challenge_1",
+      "title": "30-Day OpenClaw Challenge",
+      "hook": "Day 1: Testing if OpenClaw can automate my entire workflow in 30 days",
+      "theme": "Challenge/Experiment series (like 33K likes post)",
+      "body": "Starting a 30-day experiment.\n\nCan OpenClaw handle:\n- All my daily tasks\n- Business operations  \n- Content creation\n- Revenue tracking\n\nIf this works, I'm never going back to manual work.\n\nFollow for daily updates.",
+      "platform": "IG",
+      "virality_score": 9,
+      "status": "idea"
+    },
+    {
+      "id": "shock_1",
+      "title": "OpenClaw Is Breaking Everything",
+      "hook": "OpenClaw just broke the entire automation industry 😭",
+      "theme": "Shock/amazement (like 64K likes post)",
+      "body": "This is actually insane...\n\n- People are automating 6-figure businesses\n- AI agents making better decisions than CEOs\n- 24/7 operations with zero human input\n- Companies scaling infinitely\n\nWe thought chatbots were impressive.\n\nNow AI is running everything 💀",
+      "platform": "IG",
+      "virality_score": 8,
+      "status": "idea"
+    },
+    {
+      "id": "disruption_1",
+      "title": "Industries OpenClaw Is Killing",
+      "hook": "OpenClaw is quietly destroying these 5 industries",
+      "theme": "Disruption angle (like 17K likes)",
+      "body": "What started as an AI tool is now eliminating:\n\n1. Virtual assistants\n2. Customer service teams\n3. Marketing agencies\n4. Business consultants  \n5. Operations managers\n\nThe automation wave isn't coming.\n\nIt's already here.",
+      "platform": "IG",
+      "virality_score": 8,
+      "status": "idea"
+    },
+    {
+      "id": "cheat_code_1",
+      "title": "OpenClaw Business Hack",
+      "hook": "OpenClaw is the ultimate business hack (and it's unfair)",
+      "theme": "Unfair advantage (like 17K likes)",
+      "body": "While everyone works 12-hour days:\n\nOpenClaw users:\n- Automate everything overnight\n- Scale without hiring anyone\n- Never miss opportunities\n- Operate 24/7 globally\n\nIt's like having a superpower others don't know about.",
+      "platform": "IG",
+      "virality_score": 7,
+      "status": "idea"
+    },
+    {
+      "id": "news_1",
+      "title": "OpenClaw Weekly Roundup",
+      "hook": "Here's what happened in the OpenClaw community this week",
+      "theme": "News/updates (consistent 3K+ likes)",
+      "body": "This community is growing too fast...\n\n- 500+ new businesses automated\n- Users generating millions in revenue\n- Enterprise clients joining daily\n- AI agents handling complex tasks\n\nThe business automation revolution is accelerating.",
+      "platform": "IG",
+      "virality_score": 6,
+      "status": "idea"
+    },
+    {
+      "id": "acquisition_1",
+      "title": "OpenClaw Acquisition Rumors",
+      "hook": "Major tech company just acquired OpenClaw (this changes everything)",
+      "theme": "Industry changes (like 6K likes)",
+      "body": "The rumors are confirmed.\n\nOpenClaw went from $49/month tool to billion-dollar acquisition.\n\nEarly users saw this coming:\n- Exponential growth\n- Enterprise adoption\n- Revolutionary automation\n- Massive community\n\nThis is why you adopt technology early.",
+      "platform": "IG",
+      "virality_score": 7,
+      "status": "idea"
+    },
+    {
+      "id": "automation_1",
+      "title": "OpenClaw Business Operations",
+      "hook": "OpenClaw is running entire businesses from a single dashboard",
+      "theme": "Complete automation (like 7.9K likes)",
+      "body": "Business owners are literally texting OpenClaw all day.\n\nIt handles:\n- Customer inquiries instantly\n- Sales processes automatically  \n- Marketing campaigns continuously\n- Operations management 24/7\n\nThis is the future of business.",
+      "platform": "IG",
+      "virality_score": 7,
+      "status": "idea"
+    }
+  ],
+  "columns": {
+    "idea": "💡 Script Ideas",
+    "ready": "📝 Ready to Film",
+    "filmed": "🎬 Filmed",
+    "posted": "📱 Posted",
+    "analytics": "📊 Analytics"
+  },
+  "updated": "2026-02-21T10:20:00Z"
+}
