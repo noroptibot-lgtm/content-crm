@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content CRM Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Content CRM Dashboard</h1>
+        <div class="header-actions">
+            <button class="btn btn-primary" onclick="addNewCard()">+ Add Card</button>
+            <button class="btn btn-secondary" onclick="exportData()">Export</button>
+        </div>
+    </div>
+
+    <div class="kanban-board" id="kanban-board">
+        <div class="column" data-status="ideas">
+            <div class="column-header">
+                <h3>💡 Script Ideas</h3>
+                <span class="card-count" id="ideas-count">0</span>
+            </div>
+            <div class="card-container" id="ideas-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <!-- Cards will be populated here -->
+            </div>
+        </div>
+
+        <div class="column" data-status="ready">
+            <div class="column-header">
+                <h3>📝 Ready to Film</h3>
+                <span class="card-count" id="ready-count">0</span>
+            </div>
+            <div class="card-container" id="ready-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+
+        <div class="column" data-status="filmed">
+            <div class="column-header">
+                <h3>🎬 Filmed</h3>
+                <span class="card-count" id="filmed-count">0</span>
+            </div>
+            <div class="card-container" id="filmed-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+
+        <div class="column" data-status="posted">
+            <div class="column-header">
+                <h3>📱 Posted</h3>
+                <span class="card-count" id="posted-count">0</span>
+            </div>
+            <div class="card-container" id="posted-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+
+        <div class="column" data-status="analytics">
+            <div class="column-header">
+                <h3>📊 Analytics</h3>
+                <span class="card-count" id="analytics-count">0</span>
+            </div>
+            <div class="card-container" id="analytics-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for card details -->
+    <div id="card-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Card Details</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="card-title">Title:</label>
+                    <input type="text" id="card-title" placeholder="Enter card title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-hook">Hook:</label>
+                    <textarea id="card-hook" placeholder="Enter engaging hook"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-platform">Platform:</label>
+                        <select id="card-platform">
+                            <option value="IG">Instagram</option>
+                            <option value="YT">YouTube</option>
+                            <option value="X">X (Twitter)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="card-virality">Virality Score:</label>
+                        <input type="number" id="card-virality" min="1" max="10" placeholder="1-10">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-content">Full Script Content:</label>
+                    <textarea id="card-content" placeholder="Enter full script content here..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="card-notes">Albert's Notes:</label>
+                    <textarea id="card-notes" placeholder="Add feedback or notes..."></textarea>
+                </div>
+                
+                <div class="form-group analytics-section" id="analytics-section" style="display: none;">
+                    <label>Analytics Data:</label>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <label for="views">Views:</label>
+                            <input type="number" id="views" placeholder="0">
+                        </div>
+                        <div class="analytics-item">
+                            <label for="likes">Likes:</label>
+                            <input type="number" id="likes" placeholder="0">
+                        </div>
+                        <div class="analytics-item">
+                            <label for="comments">Comments:</label>
+                            <input type="number" id="comments" placeholder="0">
+                        </div>
+                        <div class="analytics-item">
+                            <label for="shares">Shares:</label>
+                            <input type="number" id="shares" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" onclick="deleteCard()">Delete</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveCard()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
